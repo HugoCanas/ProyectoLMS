@@ -1,0 +1,30 @@
+.tablaGira,
+.tablaGira th,
+.tablaGira td {
+    border: 1px solid #23385b;
+    margin: 10px auto;
+    padding: 10px;
+    border-collapse: collapse;
+    background: #111;
+    color: #fff;
+}
+
+.tablaGira th {
+    background: #23385b;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.tablaGira tbody tr:nth-child(even) {
+    background: #222;
+}
+
+.tablaGira tbody tr:nth-child(odd) {
+    background: #000;
+}
+
+.tablaGira tbody tr:hover {
+    background: #23385b;
+    color: #000;
+    transition: background .3s, color .3s;
+}
