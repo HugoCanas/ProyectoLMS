@@ -16,7 +16,8 @@ img {
     margin: 7px;
 }
 
-#logo { /* id para llamar a ese UNICO elemento */
+#logo {
+    /* id para llamar a ese UNICO elemento */
     height: auto;
     width: 400px;
 }
@@ -72,19 +73,22 @@ footer {
     box-sizing: border-box;
 }
 
-footer>a { /* > == solo los hijos de */
+footer>a {
+    /* > == solo los hijos de */
     margin: 20px 60px;
     color: #ececec;
     display: inline-block;
 }
 
-footer>a:hover { /* : para estados ej: hover,active... */
+footer>a:hover {
+    /* : para estados ej: hover,active... */
     background-color: #6795e0;
     color: black;
 }
 
 
-.seccionMusica { /* . para llamar a la clase */
+.seccionMusica {
+    /* . para llamar a la clase */
     text-align: center;
 }
 
@@ -211,7 +215,7 @@ nav {
 }
 
 .tarjeta {
-    position: relative; 
+    position: relative;
 }
 
 descripcion {
@@ -235,4 +239,13 @@ descripcion {
 .tarjeta:hover descripcion {
     opacity: 1;
     transform: translateY(0);
+}
+
+video {
+    width: 95%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
 }
