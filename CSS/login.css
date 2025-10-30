@@ -1,6 +1,6 @@
 h2 {
-    color: black;
-    background-color: #efa2a2;
+    color: white;
+    background-color: 212, 175, 55;
     margin-top: 50px;
     margin-bottom: 10px;
     height: 40px;
@@ -18,18 +18,21 @@ main {
 }
 
 #formulario {
+    width: 90%;
+    max-width: 600px;
+    min-height: 520px;
+    padding: 40px 30px;
     display: flex;
     flex-direction: column;
-    border-bottom: 3px solid transparent;
-    border-image: linear-gradient(to right, #6a11cb, #2575fc);
-    border-image-slice: 1;
-    padding-bottom: 20px;
-    padding: 50px;
-    width: 600px;
-    height: 100px;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #e73c7e, #23d5ab);
-    background-size: 400%, 400%;
-    animation: gradient-animation 15s ease infinite;
+    gap: 20px;
+    background: radial-gradient(circle at center, #d4af37 0%, #2c5364 40%, #0f2027 70%);
+    background-size: 120% 120%;
+    animation: gradient-animation 4s ease-in-out infinite alternate;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 @keyframes gradient-animation {
@@ -41,16 +44,23 @@ main {
 .parFormulario {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    gap: 12px;
 }
 
 .parFormulario label {
-    flex-basis: 120px;
+    flex: 0 0 130px;
     text-align: right;
-    padding-right: 15px;
+    color: #fff;
+    font-weight: 500;
 }
 
 .parFormulario input,
 .parFormulario select {
-    flex-grow: 1;
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid rgba(212, 175, 55, 0.5);
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.25);
+    color: #fff;
+    font-size: 0.95rem;
 }

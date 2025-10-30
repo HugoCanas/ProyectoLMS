@@ -1,7 +1,0 @@
-.tarjeta {
-    transition: transform .4s;
-}
-
-.tarjeta:hover {
-    transform: scale(1.05);
-}
