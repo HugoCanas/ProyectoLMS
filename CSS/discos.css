@@ -1,9 +1,9 @@
-.tablaGira{
+.tablaDiscos{
     width: 90%;
     max-width: 900px;
     margin: 30px auto;
     border-collapse: collapse;
-    background: rgba(0, 0, 0, 0.50);
+   /*background: rgba(0, 0, 0, 0.50); */
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(212, 175, 55, 0.4);
@@ -12,11 +12,11 @@
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
 }
 
-.tablaGira, thead {
+.tablaDiscos, thead {
     background: rgba(212, 175, 55, 0.15);  
 }
 
-.tablaGira th {
+.tablaDiscos th {
     padding: 12px 10px;
     font-size: 0.95rem;
     text-transform: uppercase;
@@ -24,20 +24,36 @@
     letter-spacing: 1px;
 }
 
-.tablaGira td {
+.tablaDiscos td {
     padding: 10px;
     color: #fff;
     font-size: 0.9rem;
     border-bottom: 1px solid rgba(212, 175, 55, 0.2);
 }
 
-.tablaGira tbody tr:hover {
+.tablaDiscos tbody tr:hover {
     background: rgba(212, 175, 55, 0.12);
     transition: background 0.3s;
 }
 
-.tablaGira th,
-.tablaGira td {
+.tablaDiscos th,
+.tablaDiscos td {
     vertical-align: middle;
     text-align: center;
 }
+
+/*BANDAS ES QUE EN LA  TABLA LAS COLUMNAS PARES E IMPARES TENGAN  COLORES DIFERENTES ENTRE ELLAS, 
+ES DECIR ALTERNANDO COLOR ENTRE COLUMNAS*/
+
+tr:nth-child(even) {
+    background-color: black;
+}
+
+tr:nth-child(odd) {
+    background-color: blue;
+}
+
+.encabezado:nth-child(odd){
+background-color: grey;
+}
+
